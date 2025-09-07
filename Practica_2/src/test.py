@@ -97,7 +97,7 @@ class TestPractica1:
 
         # Creamos los nodos
         for i in range(0, len(self.estrella)):
-            grafica.append(NodoSort(i, self.estrella[i],
+            grafica.append(NodoSort(i, self.estrella[i],len(self.estrella)-1,
                                        bc_pipe.crea_canal_de_entrada(), bc_pipe))
 
         # Le decimos al ambiente lo que va a procesar ...
@@ -122,7 +122,7 @@ class TestPractica1:
 
         # Creamos los nodos
         for i in range(0, len(self.estrella)):
-            grafica.append(NodoBusqueda(i, self.estrella[i],
+            grafica.append(NodoBusqueda(i, self.estrella[i],len(self.estrella)-1,
                                        bc_pipe.crea_canal_de_entrada(), bc_pipe))
 
         # Le decimos al ambiente lo que va a procesar ...
@@ -145,7 +145,7 @@ class TestPractica1:
 
         # Creamos los nodos
         for i in range(0, len(self.estrella)):
-            grafica.append(NodoBusqueda(i, self.estrella[i],
+            grafica.append(NodoBusqueda(i, self.estrella[i],len(self.estrella)-1,
                                        bc_pipe.crea_canal_de_entrada(), bc_pipe))
 
         # Le decimos al ambiente lo que va a procesar ...
